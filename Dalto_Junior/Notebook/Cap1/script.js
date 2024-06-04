@@ -1,0 +1,1 @@
+string = "cadema de texto";
