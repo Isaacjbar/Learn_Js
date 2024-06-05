@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes con Método de Cornell</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f7ff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content {
+            overflow: hidden;
+        }
+        .left-column,
+        .right-column,
+        .summary {
+            background-color: #d9e6f3;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .left-column {
+            float: left;
+            width: 30%;
+            margin-right: 5%;
+        }
+        .right-column {
+            float: left;
+            width: 60%;
+        }
+        .left-column h2,
+        .right-column h2,
+        .summary h2 {
+            color: #2e5d9d;
+            border-bottom: 2px solid #2e5d9d;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .summary {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Camel Case en JavaScript</h1>
+            <p>Fecha: 04/06/2024</p>
+        </div>
+        <div class="content">
+            <div class="left-column">
+                <h2>Notas</h2>
+                <ul>
+                    <li>Definición</li>
+                    <li>Usos comunes</li>
+                    <li>Ejemplos</li>
+                </ul>
+            </div>
+            <div class="right-column">
+                <h2>Detalles</h2>
+                <h3>Definición</h3>
+                <p>Camel Case es una convención de nomenclatura en la que las palabras se escriben sin espacios, y cada palabra interna comienza con una letra mayúscula. La primera letra de la primera palabra está en minúscula.</p>
+
+                <h3>Usos Comunes</h3>
+                <p>El Camel Case se usa comúnmente en JavaScript para nombrar variables, funciones y propiedades de objetos. Es una práctica recomendada por las convenciones de estilo de JavaScript.</p>
+
+                <h3>Ejemplos</h3>
+                <ul>
+                    <li>Variable: <code>let nombreCompleto = "Juan Pérez";</code></li>
+                    <li>Función: <code>function obtenerEdad() { return 25; }</code></li>
+                    <li>Propiedad de objeto: <code>const persona = { edadActual: 30 };</code></li>
+                </ul>
+            </div>
+            <div class="summary">
+                <h2>Resumen</h2>
+                <p>Camel Case es una convención de nomenclatura ampliamente utilizada en JavaScript para asegurar que el código sea legible y siga un estilo consistente. Se caracteriza por iniciar la primera palabra en minúscula y cada palabra subsiguiente con una letra mayúscula.</p>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes con Método de Cornell</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f7ff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content {
+            overflow: hidden;
+        }
+        .left-column,
+        .right-column,
+        .summary {
+            background-color: #d9e6f3;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .left-column {
+            float: left;
+            width: 30%;
+            margin-right: 5%;
+        }
+        .right-column {
+            float: left;
+            width: 60%;
+        }
+        .left-column h2,
+        .right-column h2,
+        .summary h2 {
+            color: #2e5d9d;
+            border-bottom: 2px solid #2e5d9d;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .summary {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Operadores en JavaScript</h1>
+            <p>Fecha: 04/06/2024</p>
+        </div>
+        <div class="content">
+            <div class="left-column">
+                <h2>Notas</h2>
+                <ul>
+                    <li>Operadores Lógicos</li>
+                    <li>Operadores de Comparación</li>
+                </ul>
+            </div>
+            <div class="right-column">
+                <h2>Detalles</h2>
+                <h3>Operadores Lógicos</h3>
+                <ul>
+                    <li><strong>&& (AND lógico):</strong> Devuelve <code>true</code> si ambos operandos son <code>true</code>.
+                        <br><code>let resultado = true && false; // false</code></li>
+                    <li><strong>|| (OR lógico):</strong> Devuelve <code>true</code> si al menos uno de los operandos es <code>true</code>.
+                        <br><code>let resultado = true || false; // true</code></li>
+                    <li><strong>! (NOT lógico):</strong> Devuelve <code>true</code> si el operando es <code>false</code>, y <code>false</code> si el operando es <code>true</code>.
+                        <br><code>let resultado = !true; // false</code></li>
+                </ul>
+                
+                <h3>Operadores de Comparación</h3>
+                <ul>
+                    <li><strong>== (igual a):</strong> Compara dos valores para igualdad después de convertirlos a un tipo común.
+                        <br><code>let resultado = 5 == '5'; // true</code></li>
+                    <li><strong>=== (estrictamente igual a):</strong> Compara dos valores para igualdad sin realizar conversión de tipo.
+                        <br><code>let resultado = 5 === '5'; // false</code></li>
+                    <li><strong>!= (diferente de):</strong> Compara dos valores para desigualdad después de convertirlos a un tipo común.
+                        <br><code>let resultado = 5 != '5'; // false</code></li>
+                    <li><strong>!== (estrictamente diferente de):</strong> Compara dos valores para desigualdad sin realizar conversión de tipo.
+                        <br><code>let resultado = 5 !== '5'; // true</code></li>
+                    <li><strong>> (mayor que):</strong> Devuelve <code>true</code> si el operando izquierdo es mayor que el derecho.
+                        <br><code>let resultado = 5 > 3; // true</code></li>
+                    <li><strong>< (menor que):</strong> Devuelve <code>true</code> si el operando izquierdo es menor que el derecho.
+                        <br><code>let resultado = 5 < 3; // false</code></li>
+                    <li><strong>>= (mayor o igual que):</strong> Devuelve <code>true</code> si el operando izquierdo es mayor o igual que el derecho.
+                        <br><code>let resultado = 5 >= 3; // true</code></li>
+                    <li><strong><= (menor o igual que):</strong> Devuelve <code>true</code> si el operando izquierdo es menor o igual que el derecho.
+                        <br><code>let resultado = 5 <= 3; // false</code></li>
+                </ul>
+            </div>
+            <div class="summary">
+                <h2>Resumen</h2>
+                <p>Los operadores lógicos se usan para realizar operaciones booleanas, mientras que los operadores de comparación se usan para comparar dos valores y devolver un resultado booleano basado en esa comparación.</p>
+            </div>
+        </div>
+    </div>
+</body>

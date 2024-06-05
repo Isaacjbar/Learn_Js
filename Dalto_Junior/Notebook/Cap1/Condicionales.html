@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes con Método de Cornell</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f7ff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content {
+            overflow: hidden;
+        }
+        .left-column,
+        .right-column,
+        .summary {
+            background-color: #d9e6f3;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .left-column {
+            float: left;
+            width: 30%;
+            margin-right: 5%;
+        }
+        .right-column {
+            float: left;
+            width: 60%;
+        }
+        .left-column h2,
+        .right-column h2,
+        .summary h2 {
+            color: #2e5d9d;
+            border-bottom: 2px solid #2e5d9d;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .summary {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Condicionales en JavaScript</h1>
+            <p>Fecha: 04/06/2024</p>
+        </div>
+        <div class="content">
+            <div class="left-column">
+                <h2>Notas</h2>
+                <ul>
+                    <li>Definición</li>
+                    <li>Usos comunes</li>
+                    <li>If</li>
+                    <li>Else If</li>
+                    <li>Else</li>
+                </ul>
+            </div>
+            <div class="right-column">
+                <h2>Detalles</h2>
+                <h3>Definición</h3>
+                <p>Los condicionales en JavaScript permiten ejecutar diferentes bloques de código en función de si una condición es verdadera o falsa. Son fundamentales para controlar el flujo de ejecución en los programas.</p>
+
+                <h3>Usos Comunes</h3>
+                <p>Los condicionales se usan para tomar decisiones en el código. Permiten ejecutar distintas acciones dependiendo de la evaluación de expresiones booleanas.</p>
+
+                <h3>If</h3>
+                <p>La declaración <code>if</code> evalúa una condición. Si la condición es verdadera, se ejecuta el bloque de código dentro del <code>if</code>.</p>
+                <pre><code>
+if (condición) {
+    // código a ejecutar si la condición es verdadera
+}
+                </code></pre>
+
+                <h3>Else If</h3>
+                <p>La declaración <code>else if</code> proporciona una condición adicional a evaluar si la condición anterior en un <code>if</code> o <code>else if</code> es falsa.</p>
+                <pre><code>
+if (condición1) {
+    // código a ejecutar si la condición1 es verdadera
+} else if (condición2) {
+    // código a ejecutar si la condición1 es falsa y condición2 es verdadera
+}
+                </code></pre>
+
+                <h3>Else</h3>
+                <p>La declaración <code>else</code> se ejecuta si ninguna de las condiciones anteriores es verdadera. No requiere una condición.</p>
+                <pre><code>
+if (condición1) {
+    // código a ejecutar si la condición1 es verdadera
+} else if (condición2) {
+    // código a ejecutar si la condición1 es falsa y condición2 es verdadera
+} else {
+    // código a ejecutar si ninguna de las condiciones anteriores es verdadera
+}
+                </code></pre>
+            </div>
+            <div class="summary">
+                <h2>Resumen</h2>
+                <p>Los condicionales en JavaScript, usando <code>if</code>, <code>else if</code> y <code>else</code>, permiten que el código tome decisiones y ejecute diferentes bloques de código basados en condiciones booleanas. Son esenciales para controlar el flujo de ejecución en los programas.</p>
+            </div>
+        </div>
+    </div>
+</body>

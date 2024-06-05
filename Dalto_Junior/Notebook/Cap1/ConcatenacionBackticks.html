@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes con Método de Cornell</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f7ff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content {
+            overflow: hidden;
+        }
+        .left-column,
+        .right-column,
+        .summary {
+            background-color: #d9e6f3;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .left-column {
+            float: left;
+            width: 30%;
+            margin-right: 5%;
+        }
+        .right-column {
+            float: left;
+            width: 60%;
+        }
+        .left-column h2,
+        .right-column h2,
+        .summary h2 {
+            color: #2e5d9d;
+            border-bottom: 2px solid #2e5d9d;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .summary {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Operadores en JavaScript</h1>
+            <p>Fecha: 05/06/2024</p>
+        </div>
+        <div class="content">
+            <div class="left-column">
+                <h2>Notas</h2>
+                <ul>
+                    <li>Concatenación</li>
+                    <li>Uso de Backticks</li>
+                </ul>
+            </div>
+            <div class="right-column">
+                <h2>Detalles</h2>
+                <h3>Concatenación</h3>
+                <p>
+                    <strong>Definición:</strong> La concatenación es el proceso de unir dos o más cadenas de texto. En JavaScript, se puede realizar de varias maneras.
+                </p>
+                <p>
+                    <strong>Ejemplo:</strong> Unir dos cadenas "Hola" y "Mundo" para formar "Hola Mundo".
+                </p>
+                <p>
+                    <strong>Con el signo +:</strong> 
+                    <code>
+                        let saludo = "Hola" + " Mundo";
+                    </code>
+                </p>
+                <p>
+                    <strong>Para números, forzamos a string con (""):</strong>
+                    <code>
+                        let numeroTexto = 5 + "" + 10; // "510"
+                    </code>
+                </p>
+                <p>
+                    <strong>Con concat:</strong> 
+                    <code>
+                        let saludo = "Hola".concat(" Mundo");
+                    </code>
+                </p>
+                <p>
+                    <strong>Con backticks y la variable entre ${}:</strong>
+                    <code>
+                        let nombre = "Mundo";
+                        let saludo = `Hola ${nombre}`;
+                    </code>
+                </p>
+
+                <h3>Uso de Backticks</h3>
+                <p>
+                    <strong>Definición:</strong> Los backticks (acento grave) se utilizan para definir plantillas de cadena (template literals) en JavaScript, permitiendo cadenas multilínea y expresiones incrustadas.
+                </p>
+                <p>
+                    <strong>Sin backticks:</strong>
+                    <code>
+                        let texto = "línea 1\n\
+                        línea 2";
+                    </code>
+                </p>
+                <p>
+                    <strong>Con backticks:</strong>
+                    <code>
+                        let texto = `línea 1
+                        línea 2`;
+                    </code>
+                </p>
+                <p>
+                    <strong>Escape de comillas simples:</strong>
+                    <code>
+                        let texto = `Es un 'texto' con comillas simples`;
+                    </code>
+                </p>
+                <p>
+                    <strong>Escape de comillas dobles:</strong>
+                    <code>
+                        let texto = `Es un "texto" con comillas dobles`;
+                    </code>
+                </p>
+            </div>
+            <div class="summary">
+                <h2>Resumen</h2>
+                <p>Its okay</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
