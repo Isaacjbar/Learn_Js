@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes con Método de Cornell</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f7ff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content {
+            overflow: hidden;
+        }
+        .left-column,
+        .right-column,
+        .summary {
+            background-color: #d9e6f3;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .left-column {
+            float: left;
+            width: 30%;
+            margin-right: 5%;
+        }
+        .right-column {
+            float: left;
+            width: 60%;
+        }
+        .left-column h2,
+        .right-column h2,
+        .summary h2 {
+            color: #2e5d9d;
+            border-bottom: 2px solid #2e5d9d;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .summary {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Variables</h1>
+            <p>Fecha: 04/06/2024</p>
+        </div>
+        <div class="content">
+            <div class="left-column">
+                <h2>Notas</h2>
+                <ul>
+                    <li>Tipos de datos</li>
+                    <li>Tipos de variables</li>
+                    <li>Pruebas con prompt</li>
+                </ul>
+            </div>
+            <div class="right-column">
+                <h2>Detalles</h2>
+                <h3>Tipos de datos</h3>
+                <p>Los tipos primitivos son inmutables y se almacenan directamente en la ubicación que la variable accede. Por ejemplo:</p>
+                <ul>
+                    <li><strong>String:</strong> "Hola Mundo".</li>
+                    <li><strong>Number:</strong> 25, 80.5.</li>
+                    <li><strong>BigInt:</strong> Para números muy grandes.</li>
+                    <li><strong>Boolean:</strong> true, false.</li>
+                    <li><strong>Undefined:</strong> Variable no asignada.</li>
+                    <li><strong>Null:</strong> Representa un valor nulo.</li>
+                    <li><strong>Symbol:</strong> Útiles para propiedades de objetos únicas.</li>
+                </ul>
+                <h3>Tipos de variables</h3>
+                <p><strong>var:</strong> Alcance de función, hoisting al principio de la función o script.</p>
+                <p><strong>let:</strong> Alcance de bloque, no accesible antes de su declaración (TDZ).</p>
+                <p><strong>const:</strong> Alcance de bloque, debe ser inicializada al declarar, inmutable.</p>
+                <h3>Pruebas con prompt</h3>
+                <p>Prompt es un input, la respuesta se puede guardar en una variable</p>
+            </div>
+            <div class="summary">
+                <h2>Resumen</h2>
+                <p>It's Okay</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
