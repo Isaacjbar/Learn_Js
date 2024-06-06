@@ -4,98 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apuntes con Método de Cornell</title>
-    <style>
-        /* Estilos generales */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f7ff;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .content {
-            overflow: hidden;
-        }
-        .left-column,
-        .right-column,
-        .summary {
-            background-color: #d9e6f3;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-        .left-column {
-            float: left;
-            width: 30%;
-            margin-right: 5%;
-        }
-        .right-column {
-            float: left;
-            width: 60%;
-        }
-        .left-column h2,
-        .right-column h2,
-        .summary h2 {
-            color: #2e5d9d;
-            border-bottom: 2px solid #2e5d9d;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .summary {
-            clear: both;
-        }
-    </style>
+    <!-- Incluyendo Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>Título de la Clase o Conferencia</h1>
+<body class="bg-light">
+    <div class="container bg-white rounded shadow-sm p-4 mt-5">
+        <div class="text-center mb-4">
+            <h1 class="text-primary">Título de la Clase o Conferencia</h1>
             <p>Fecha: [Fecha]</p>
         </div>
-        <div class="content">
-            <div class="left-column">
-                <h2>Notas</h2>
-                <ul>
-                    <!-- Aquí puedes escribir tus notas de manera resumida -->
-                    <li>Punto clave 1</li>
-                    <li>Punto clave 2</li>
-                    <li>Punto clave 3</li>
-                    <!-- Agrega más según necesites -->
-                </ul>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="p-3 bg-info rounded text-white shadow-sm">
+                    <h2 class="text-white">Notas</h2>
+                    <ul class="list-unstyled">
+                        <li>Punto clave 1</li>
+                        <li>Punto clave 2</li>
+                        <li>Punto clave 3</li>
+                    </ul>
+                </div>
             </div>
-            <div class="right-column">
-                <h2>Detalles</h2>
-                <!-- Aquí puedes escribir notas más detalladas -->
-                <p><strong>Punto clave 1:</strong> Detalles y explicaciones...</p>
-                <p><strong>Punto clave 2:</strong> Más detalles...</p>
-                <p><strong>Punto clave 3:</strong> Continuación...</p>
-                <!-- Agrega más según necesites -->
-            </div>
-            <div class="summary">
-                <h2>Resumen</h2>
-                <!-- Aquí puedes escribir un resumen de la clase o conferencia -->
-                <p>Resumen del contenido...</p>
+            <div class="col-md-8 mb-3">
+                <div class="p-3 bg-info rounded text-white shadow-sm">
+                    <h2 class="text-white">Detalles</h2>
+                    <p><strong>Punto clave 1:</strong> Detalles y explicaciones...</p>
+                    <p><strong>Punto clave 2:</strong> Más detalles...</p>
+                    <p><strong>Punto clave 3:</strong> Continuación...</p>
+                </div>
             </div>
         </div>
+        <div class="bg-info rounded text-white shadow-sm p-3">
+            <h2 class="text-white">Resumen</h2>
+            <p>Resumen del contenido...</p>
+        </div>
     </div>
+    <!-- Incluyendo Bootstrap JS (opcional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apunte sobre Funciones</title>
+    <!-- Incluyendo Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container bg-white rounded shadow-sm p-4 mt-5">
+        <div class="text-center mb-4">
+            <h1 class="text-primary">14) Funciones</h1>
+            <p>Definición y Usos</p>
+        </div>
+        <div class="p-3 bg-info rounded text-white shadow-sm mb-3">
+            <h2 class="text-white">Definición y Usos</h2>
+            <p>Una función en programación es un bloque de código que realiza una tarea específica cuando es llamado o invocado.</p>
+            <p>Las funciones permiten modularizar el código, reutilizarlo y hacerlo más legible y mantenible.</p>
+            <p>Se utilizan para dividir un programa en pequeñas partes, cada una realizando una tarea específica.</p>
+        </div>
+        <div class="p-3 bg-info rounded text-white shadow-sm mb-3">
+            <h2 class="text-white">Formas de crear funciones (y llamarlas)</h2>
+            <p>1. Declaración de función:</p>
+            <pre><code>function nombreFuncion(parametros) {
+    // código a ejecutar
+}</code></pre>
+            <p>2. Expresión de función:</p>
+            <pre><code>let nombreFuncion = function(parametros) {
+    // código a ejecutar
+};</code></pre>
+            <p>Para llamar una función:</p>
+            <pre><code>nombreFuncion(argumentos);</code></pre>
+        </div>
+        <div class="p-3 bg-info rounded text-white shadow-sm mb-3">
+            <h2 class="text-white">Return</h2>
+            <p>La sentencia <code>return</code> finaliza la ejecución de la función y especifica el valor que se debe devolver al lugar desde donde fue llamada.</p>
+            <pre><code>function sumar(a, b) {
+    return a + b;
+}
+let resultado = sumar(5, 3); // resultado será 8</code></pre>
+        </div>
+        <div class="p-3 bg-info rounded text-white shadow-sm mb-3">
+            <h2 class="text-white">Parámetros</h2>
+            <p>Los parámetros son variables que se utilizan para pasar datos a una función cuando es llamada.</p>
+            <pre><code>function saludar(nombre) {
+    console.log("Hola, " + nombre + "!");
+}
+saludar("Juan"); // Salida: Hola, Juan!</code></pre>
+        </div>
+        <div class="p-3 bg-info rounded text-white shadow-sm mb-3">
+            <h2 class="text-white">Scope</h2>
+            <p>El scope o ámbito de una variable es la parte del programa donde esa variable es accesible.</p>
+            <p>Las variables declaradas dentro de una función tienen un scope local, lo que significa que solo pueden ser accedidas desde dentro de la función.</p>
+            <pre><code>function ejemplo() {
+    let variableLocal = "Soy local";
+    console.log(variableLocal); // Salida: Soy local
+}
+console.log(variableLocal); // Error: variableLocal no está definida</code></pre>
+        </div>
+        <div class="p-3 bg-info rounded text-white shadow-sm mb-3">
+            <h2 class="text-white">Funciones flecha</h2>
+            <p>Las funciones flecha son una forma más concisa de escribir funciones en JavaScript.</p>
+            <p>Son especialmente útiles para funciones simples y funciones anónimas.</p>
+            <pre><code>// Sintaxis básica
+let nombreFuncion = (parametros) => {
+    // código a ejecutar
+};
+// Ejemplo
+let sumar = (a, b) => a + b;</code></pre>
+        </div>
+    </div>
+    <!-- Incluyendo Bootstrap JS (opcional) -->
+    <script src="https://code.jquery.com/jquery-3.5.

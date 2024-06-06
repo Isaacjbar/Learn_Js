@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apunte sobre Bucles e Iteración</title>
+    <!-- Incluyendo Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container bg-white rounded shadow-sm p-4 mt-5">
+        <div class="text-center mb-4">
+            <h1 class="text-primary">13) Bucles e Iteración</h1>
+            <p>Definición y Usos</p>
+        </div>
+        <div class="p-3 bg-info rounded text-white shadow-sm mb-3">
+            <h2 class="text-white">sentencia while</h2>
+            <p>La sentencia <code>while</code> crea un bucle que ejecuta una sentencia mientras la condición especificada sea evaluada como verdadera.</p>
+            <p>Se utiliza cuando no se sabe de antemano cuántas veces se repetirá el bucle.</p>
+            <pre><code>while (condición) {
+    // código a ejecutar
+}</code></pre>
+        </div>
+        <div class="p-3 bg-info rounded text-white shadow-sm mb-3">
+            <h2 class="text-white">sentencia do while</h2>
+            <p>La sentencia <code>do while</code> crea un bucle que ejecuta una sentencia una vez y luego se repite mientras una condición especificada sea verdadera.</p>
+            <p>Se asegura de que el código dentro del bucle se ejecute al menos una vez, incluso si la condición es falsa desde el principio.</p>
+            <pre><code>do {
+    // código a ejecutar
+} while (condición);</code></pre>
+        </div>
+        <div class="p-3 bg-info rounded text-white shadow-sm mb-3">
+            <h2 class="text-white">sentencia for</h2>
+            <p>La sentencia <code>for</code> crea un bucle que se repite hasta que una condición especificada sea falsa.</p>
+            <p>Es comúnmente utilizado cuando se sabe de antemano cuántas veces se repetirá el bucle.</p>
+            <pre><code>for (inicialización; condición; actualización) {
+    // código a ejecutar
+}</code></pre>
+        </div>
+        <div class="p-3 bg-info rounded text-white shadow-sm mb-3">
+            <h2 class="text-white">sentencia for in</h2>
+            <p>La sentencia <code>for in</code> itera sobre las propiedades enumerables de un objeto.</p>
+            <p>Es útil cuando se desea iterar sobre las claves de un objeto.</p>
+            <pre><code>for (variable in objeto) {
+    // código a ejecutar
+}</code></pre>
+        </div>
+        <div class="p-3 bg-info rounded text-white shadow-sm mb-3">
+            <h2 class="text-white">sentencia for of</h2>
+            <p>La sentencia <code>for of</code> itera sobre los valores de un objeto iterable, como un array o una cadena de texto.</p>
+            <p>Es útil cuando se desea iterar sobre los valores de un objeto iterable.</p>
+            <pre><code>for (variable of iterable) {
+    // código a ejecutar
+}</code></pre>
+        </div>
+        <div class="p-3 bg-info rounded text-white shadow-sm mb-3">
+            <h2 class="text-white">sentencia break</h2>
+            <p>La sentencia <code>break</code> termina la ejecución del bucle actual, del switch, o de la etiqueta asociada más cercana.</p>
+            <p>Se utiliza para salir prematuramente de un bucle.</p>
+            <pre><code>break;</code></pre>
+        </div>
+        <div class="p-3 bg-info rounded text-white shadow-sm mb-3">
+            <h2 class="text-white">sentencia label</h2>
+            <p>La sentencia <code>label</code> identifica un bucle y le permite usar la sentencia <code>break</code> o <code>continue</code> desde dentro del bucle anidado.</p>
+            <p>Es útil cuando se desea romper o continuar un bucle específico dentro de bucles anidados.</p>
+            <pre><code>nombreDeEtiqueta: while (condición) {
+    // código a ejecutar
+}</code></pre>
+        </div>
+        <div class="p-3 bg-info rounded text-white shadow-sm mb-3">
+            <h2 class="text-white">sentencia continue</h2>
+            <p>La sentencia <code>continue</code> salta una iteración en el bucle y continúa con la siguiente iteración.</p>
+            <p>Se utiliza para omitir el resto del código en una iteración y continuar con la siguiente.</p>
+            <pre><code>continue;</code></pre>
+        </div>
+    </div>
+    <!-- Incluyendo Bootstrap JS (opcional) -->
+    <script
+

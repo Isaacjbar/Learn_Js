@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apunte sobre forEach</title>
+    <!-- Incluyendo Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container bg-white rounded shadow-sm p-4 mt-5">
+        <div class="text-center mb-4">
+            <h1 class="text-primary">15) forEach</h1>
+            <p>Sintaxis y uso</p>
+        </div>
+        <div class="p-3 bg-info rounded text-white shadow-sm mb-3">
+            <h2 class="text-white">Sintaxis y uso</h2>
+            <p>El método <code>forEach</code> ejecuta una función dada una vez por cada elemento de un array.</p>
+            <pre><code>array.forEach(function(elemento, índice, arreglo) {
+    // código a ejecutar
+});</code></pre>
+            <p>El parámetro <code>elemento</code> representa el elemento actual del array.</p>
+            <p>El parámetro <code>índice</code> representa el índice del elemento actual del array.</p>
+            <p>El parámetro <code>arreglo</code> representa el array al que pertenece el elemento actual.</p>
+        </div>
+        <div class="p-3 bg-info rounded text-white shadow-sm mb-3">
+            <h2 class="text-white">Ventajas respecto a for</h2>
+            <p>1. Sintaxis más simple y legible.</p>
+            <p>2. No es necesario preocuparse por el tamaño del array ni por el manejo de índices.</p>
+            <p>3. La función de callback proporciona acceso directo a cada elemento sin necesidad de acceder a través de un índice.</p>
+        </div>
+        <div class="p-3 bg-info rounded text-white shadow-sm mb-3">
+            <h2 class="text-white">Desventajas (Break, Continue)</h2>
+            <p>1. No es posible utilizar <code>break</code> para salir del bucle <code>forEach</code>.</p>
+            <p>2. No es posible utilizar <code>continue</code> para omitir una iteración en el bucle <code>forEach</code>.</p>
+            <p>Para salir o omitir iteraciones en un bucle <code>forEach</code>, se recomienda usar un bucle <code>for</code> o <code>for...of</code>.</p>
+        </div>
+    </div>
+    <!-- Incluyendo Bootstrap JS (opcional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
