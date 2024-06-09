@@ -1,0 +1,22 @@
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.entrada {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.botones button {
+    width: 100px;
+}
+
+#resultado {
+    font-size: 1.2em;
+    font-weight: bold;
+}
