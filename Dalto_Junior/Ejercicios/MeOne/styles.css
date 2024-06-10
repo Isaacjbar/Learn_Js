@@ -1,0 +1,11 @@
+.count{
+    width: 200px;
+    height: 180px;
+    text-align: center;
+    background: #B4E9FA;
+    text-align: center;
+    margin: 0 auto;
+}
+.count-tittle{
+    margin-top: 20;
+}

@@ -32,4 +32,4 @@ function dividir() {
 
 function mostrarResultado(resultado) {
     document.getElementById('resultado').innerText = "El resultado es: " + resultado;
-}
+} 
