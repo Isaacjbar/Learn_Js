@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apunte sobre Programación Orientada a Objetos (POO) en JavaScript</title>
+    <!-- Incluyendo Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container bg-white rounded shadow-sm p-4 mt-5">
+        <div class="text-center mb-4">
+            <h1 class="text-primary">Programación Orientada a Objetos (POO) en JavaScript</h1>
+        </div>
+
+        <!-- Definición y Usos de POO -->
+        <div class="p-3 bg-info rounded text-white shadow-sm">
+            <h2 class="text-white">Definición y Usos de POO</h2>
+            <p>La Programación Orientada a Objetos (POO) es un paradigma de programación que se basa en la idea de "objetos", que pueden contener datos y código. Se utiliza para modelar sistemas del mundo real y se centra en la modularidad y la reutilización de código.</p>
+        </div>
+
+        <!-- Ejemplo Básico de POO en JavaScript -->
+        <div class="p-3 bg-info rounded text-white shadow-sm">
+            <h2 class="text-white">Ejemplo Básico de POO en JavaScript</h2>
+            <pre><code class="language-javascript">class Carro {
+  constructor(marca, modelo) {
+    this.marca = marca;
+    this.modelo = modelo;
+  }
+
+  acelerar() {
+    console.log(`El ${this.marca} ${this.modelo} está acelerando.`);
+  }
+}
+
+const miCarro = new Carro("Toyota", "Corolla");
+miCarro.acelerar(); // Output: El Toyota Corolla está acelerando.</code></pre>
+        </div>
+
+        <!-- Instanciación -->
+        <div class="p-3 bg-info rounded text-white shadow-sm">
+            <h2 class="text-white">Instanciación</h2>
+            <p>La instanciación es el proceso de crear un objeto a partir de una clase en JavaScript.</p>
+            <pre><code class="language-javascript">// Instanciación de un objeto "Carro"
+const otroCarro = new Carro("Honda", "Civic");
+otroCarro.acelerar(); // Output: El Honda Civic está acelerando.</code></pre>
+        </div>
+
+        <!-- Conceptos básicos de POO en JavaScript -->
+        <div class="p-3 bg-info rounded text-white shadow-sm">
+            <h2 class="text-white">Conceptos básicos de POO en JavaScript</h2>
+            <!-- Clase -->
+        <div class="p-3 bg-info rounded text-white shadow-sm">
+            <h2 class="text-white">Clase</h2>
+            <p>Una clase en la programación orientada a objetos (POO) es una plantilla para crear objetos. Define los atributos y métodos comunes a todos los objetos de ese tipo.</p>
+            <pre><code class="language-javascript">class Persona {
+  constructor(nombre, edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+  }
+
+  saludar() {
+    console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
+  }
+}</code></pre>
+        </div>
+
+        <!-- Objeto -->
+        <div class="p-3 bg-info rounded text-white shadow-sm">
+            <h2 class="text-white">Objeto</h2>
+            <p>Un objeto es una instancia única de una clase que contiene tanto datos (atributos) como comportamiento (métodos).</p>
+            <pre><code class="language-javascript">const persona1 = new Persona("Juan", 30);
+persona1.saludar(); // Output: Hola, mi nombre es Juan y tengo 30 años.</code></pre>
+        </div>
+
+        <!-- Atributo -->
+        <div class="p-3 bg-info rounded text-white shadow-sm">
+            <h2 class="text-white">Atributo</h2>
+            <p>Un atributo es una variable asociada a un objeto que almacena datos específicos sobre el objeto.</p>
+            <p>En la clase `Persona`, `nombre` y `edad` son atributos.</p>
+        </div>
+
+        <!-- Método -->
+        <div class="p-3 bg-info rounded text-white shadow-sm">
+            <h2 class="text-white">Método</h2>
+            <p>Un método es una función asociada a un objeto que define su comportamiento.</p>
+            <p>En la clase `Persona`, el método `saludar()` es un método que muestra un saludo con el nombre y la edad de la persona.</p>
+        </div>
+
+        <!-- Constructor -->
+        <div class="p-3 bg-info rounded text-white shadow-sm">
+            <h2 class="text-white">Constructor</h2>
+            <p>El constructor es un método especial dentro de una clase que se llama automáticamente cuando se crea una nueva instancia de la clase. Se utiliza para inicializar los atributos del objeto.</p>
+            <pre><code class="language-javascript">class Persona {
+  constructor(nombre, edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+  }
+}</code></pre>
+    <!-- Características de la POO en JavaScript -->
+<div class="p-3 bg-info rounded text-white shadow-sm">
+    <h2 class="text-white">Características de la POO en JavaScript</h2>
+    <ul>
+        <li><strong>Abstracción:</strong> La abstracción es el proceso de simplificar la complejidad de un sistema, centrándose en los aspectos esenciales mientras se ocultan los detalles no relevantes.</li>
+        <li><strong>Ejemplo:</strong> En un programa de gestión de empleados, podemos abstraer la entidad "Empleado" con sus atributos (nombre, salario, etc.) y métodos (calcularSalario(), obtenerNombre(), etc.), ocultando los detalles internos de implementación.</li>
+        <li><strong>Modularidad:</strong> La modularidad es el principio de dividir un programa en partes más pequeñas y manejables llamadas módulos, que pueden ser desarrollados y mantenidos de manera independiente.</li>
+        <li><strong>Ejemplo:</strong> En un sistema de comercio electrónico, podemos tener módulos separados para la gestión de productos, el proceso de pago, el registro de usuarios, etc., lo que facilita la reutilización y el mantenimiento del código.</li>
+        <li><strong>Jerarquía:</strong> La jerarquía en POO se refiere a la organización de clases en una estructura de árbol, donde las clases más específicas (subclases) heredan comportamiento y atributos de clases más generales (superclases).</li>
+        <li><strong>Ejemplo:</strong> En un sistema de gestión de vehículos, podemos tener una jerarquía de clases como Vehículo (superclase) con subclases como Automóvil, Motocicleta, etc., que heredan características comunes como velocidad máxima, pero pueden tener comportamientos específicos.</li>
+    </ul>
+</div>
+
+<!-- Otros conceptos de POO en JavaScript -->
+<div class="p-3 bg-info rounded text-white shadow-sm">
+    <h2 class="text-white">Otros conceptos de POO en JavaScript</h2>
+    <ul>
+        <li><strong>Herencia Prototípica:</strong> En JavaScript, la herencia se implementa a través del mecanismo de prototipos en lugar de las clases tradicionales. Una clase hereda propiedades y métodos de otra clase a través de su prototipo.</li>
+        <li><strong>Ejemplo:</strong> La función constructora `Animal` define propiedades y métodos que son heredados por otras funciones constructoras como `Perro` o `Gato` a través de su prototipo.</li>
+        <li><strong>Métodos y Propiedades Estáticas:</strong> Los métodos y propiedades estáticas son aquellos que pertenecen a la clase en sí misma en lugar de a instancias individuales de la clase. Se accede a ellos directamente desde la clase, no desde una instancia.</li>
+        <li><strong>Ejemplo:</strong> En una clase `Calculadora`, un método estático como `sumar` puede ser llamado directamente como `Calculadora.sumar(2, 3)` sin necesidad de crear una instancia de `Calculadora`.</li>
+        <li><strong>Mixins:</strong> Los mixins son una técnica de composición que permite combinar múltiples clases o comportamientos en una sola clase. Esto mejora la reutilización de código y permite la modularidad.</li>
+        <li><strong>Ejemplo:</strong> Podemos tener un mixin `Registrable` que define un método `registrarUsuario` y luego aplicarlo a clases como `Usuario` o `Empleado` para agregar la funcionalidad de registro.</li>
+        <li><strong>Programación Orientada a Objetos con ES6:</strong> Con la introducción de ES6 (ECMAScript 2015), JavaScript introdujo una sintaxis más cercana a la programación orientada a objetos tradicional, con la introducción de las palabras clave `class`, `extends` y `super`.</li>
+        <li><strong>Ejemplo:</strong> Con ES6, podemos definir clases usando la palabra clave `class`, establecer relaciones de herencia con `extends` y llamar al constructor de la clase padre con `super`.</li>
+    </ul>
+</div>
+
+</div>
+</body>
+</html>
