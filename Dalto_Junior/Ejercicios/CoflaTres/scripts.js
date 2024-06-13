@@ -152,6 +152,7 @@ class App{
             document.write("No se puede cerra porque ya está cerrada");
         } 
     }
+    //No agregue metodo de mostrar info jajaj ya me canseeeeeeee
 }
 
 const appOne = new App("Clash royale","2M",5,false,false);
