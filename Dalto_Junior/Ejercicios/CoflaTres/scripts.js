@@ -1,5 +1,5 @@
 class Celular {
-    constructor(color, weight, displayRes, cameraRes, ram, state = false) {
+    constructor(color, weight, displayRes, cameraRes, ram, state) {
         this.color = color;
         this.weight = weight;
         this.displayRes = displayRes;
@@ -59,13 +59,100 @@ class Celular {
     }
 }
 
-const celOne = new Celular("Rojo", 450, 90, 50, 2);
-const celTwo = new Celular("Azul", 300, 120, 50, 4);
-const celThree = new Celular("Verde", 500, 240, 65, 12);
+const celOne = new Celular("Rojo", 450, 90, 50, 2, false);
+const celTwo = new Celular("Azul", 300, 120, 50, 4, false);
+const celThree = new Celular("Verde", 500, 240, 65, 12, false);
 
-celOne.showInfo();
-document.write("<br>");
-celTwo.showInfo();
-document.write("<br>");
-celThree.showInfo();
-document.write("<br>");
+// celOne.showInfo();
+// document.write("<br>");
+// celTwo.showInfo();
+// document.write("<br>");
+// celThree.showInfo();
+// document.write("<br>");
+
+// 3B Camara lenta, reconocimiento facial, y camara extra
+
+class GamaAlta extends Celular {
+    constructor(color, weight, displayRes, cameraRes, ram, state, camE) {
+        super(color, weight, displayRes, cameraRes, ram, state);
+        this.camE = camE;
+    }
+    grabarL() {
+        if (this.state === true) {
+            document.write("Grabando en cámara lenta...<br>");
+        } else {
+            document.write("No se puede grabar, el celular está apagado<br>");
+        }
+    }
+    
+    reconocerF() {
+        if (this.state === true) {
+            document.write("Reconociendo rostro...<br>");
+        } else {
+            document.write("No se puede reconocer, el celular está apagado<br>");
+        }
+    }
+    
+    showInfo() {
+        super.showInfo();
+        document.write("Cámara extra: " + this.camE + " MP<br>");
+    }
+}
+
+const celGA = new GamaAlta("Oro", 450, 90, 50, 2, false, 35);
+const celGB = new GamaAlta("Plata", 300, 120, 50, 4, false, 25);
+
+// celGA.showInfo();
+// document.write("<br>");
+// celGB.showInfo();
+// document.write("<br>");
+
+// COFLA 3C
+class App{
+    constructor(name,descargas,puntuacion,stateD,stateO){
+        this.name=name;
+        this.descargas=descargas;
+        this.puntuacion=puntuacion;
+        this.stateD=stateD;
+        this.stateO=stateO;
+    }
+    descargar(){
+        if(this.stateD===false){
+            document.write("Descargando...")
+            this.stateD=true;
+            } else{
+            document.write("Ya está instalada")
+        }
+    }
+    desinstalar(){
+        if(this.stateD===true){
+            document.write("Desinstalando...")
+            this.stateD=false;
+            } else{
+            document.write("No está instalada")
+        }
+    }
+    abrir(){
+        if(this.stateD===true && this.stateO===false){
+            document.write("Abriendo...")
+            this.stateO=true;
+        } else if (this.stateD===false){
+            document.write("No se puede abrir porque no se ha instalado");
+        } else if (this.stateO===true){
+            document.write("No se puede abrir porque ya está abierta");
+        } 
+    }
+    cerrar(){
+        if(this.stateD===true && this.stateO===true){
+            document.write("Cerrando...")
+            this.stateO=false;
+        } else if (this.stateD===false){
+            document.write("No se puede abrir porque no se ha instalado");
+        } else if (this.stateO===false){
+            document.write("No se puede cerra porque ya está cerrada");
+        } 
+    }
+}
+
+const appOne = new App("Clash royale","2M",5,false,false);
+const appTwo = new App("Brawl","1M",3,false,false);
