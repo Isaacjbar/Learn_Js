@@ -1,26 +1,55 @@
 class Celular {
-    constructor(color, weight, displayRes, cameraRes, ram) {
+    constructor(color, weight, displayRes, cameraRes, ram, state = false) {
         this.color = color;
         this.weight = weight;
         this.displayRes = displayRes;
         this.cameraRes = cameraRes;
         this.ram = ram;
+        this.state = state;
     }
+
     prender() {
-        document.write("Prendiendo...<br>");
+        if (this.state === false) {
+            document.write("Prendiendo...<br>");
+            this.state = true;
+        } else {
+            document.write("Ya está prendido<br>");
+        }
     }
+
     reiniciar() {
-        document.write("Reiniciando...<br>");
+        if (this.state === true) {
+            document.write("Reiniciando...<br>");
+        } else {
+            document.write("No se puede reiniciar, el celular está apagado<br>");
+        }
     }
+
     apagar() {
-        document.write("Apagando...<br>");
+        if (this.state === true) {
+            document.write("Apagando...<br>");
+            this.state = false;
+        } else {
+            document.write("Ya está apagado<br>");
+        }
     }
+
     tomarFotos() {
-        document.write("Tomando foto...<br>");
+        if (this.state === true) {
+            document.write("Tomando foto...<br>");
+        } else {
+            document.write("No se puede tomar foto, el celular está apagado<br>");
+        }
     }
+
     grabar() {
-        document.write("Grabando...<br>");
+        if (this.state === true) {
+            document.write("Grabando...<br>");
+        } else {
+            document.write("No se puede grabar, el celular está apagado<br>");
+        }
     }
+
     showInfo() {
         document.write("Color: " + this.color + "<br>" +
                         "Peso: " + this.weight + " gramos<br>" +
