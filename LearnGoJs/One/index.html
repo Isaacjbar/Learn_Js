@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoJS TreeModel Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/gojs/release/go.js"></script>
+</head>
+<body>
+    <div id="myDiagramDiv"></div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="addNodeForm">
+                <label for="nodeName">Nombre del Nodo:</label>
+                <input type="text" id="nodeName" name="nodeName" required>
+                <input type="hidden" id="parentKey">
+                <button type="submit">Añadir Nodo</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
