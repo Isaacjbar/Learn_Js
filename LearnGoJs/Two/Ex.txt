@@ -1,0 +1,3 @@
+Este codigo crea al mismo tiempo
+dos nodos hijos, es decir impide que existan
+nodos sin hermanos.

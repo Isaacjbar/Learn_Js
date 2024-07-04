@@ -1,0 +1,5 @@
+Este codigo crea al mismo tiempo
+dos nodos hijos, es decir impide que existan
+nodos sin hermanos pero sin pedir texto.
+
+Se añadió el metodo cambiar nombre.

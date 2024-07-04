@@ -1,27 +1,29 @@
 function init() {
     var $ = go.GraphObject.make;  // abreviatura para go.GraphObject.make
 
-    // función para añadir un nodo hijo
-    function addChildNode(e, obj) {
+    // función para añadir dos nodos hijos 
+    function addChildNodes(e, obj) {
         var node = obj.part.adornedPart;  // el nodo al que se le hace clic
         var diagram = node.diagram;
-        diagram.startTransaction("add child");
+        diagram.startTransaction("add children");
 
         // contar hijos existentes
         var children = node.findTreeChildrenNodes().count;
 
         if (children < 2) {
-            var newName = prompt("Ingrese el nombre del nuevo nodo:");
-            if (newName) {
-                var newKey = diagram.model.nodeDataArray.length + 1;
-                var newNodeData = { key: newKey, parent: node.data.key, name: newName };
-                diagram.model.addNodeData(newNodeData);
+            for (var i = 0; i < 2; i++) {
+                var newName = prompt("Ingrese el nombre del nuevo nodo:");
+                if (newName) {
+                    var newKey = diagram.model.nodeDataArray.length + 1;
+                    var newNodeData = { key: newKey, parent: node.data.key, name: newName };
+                    diagram.model.addNodeData(newNodeData);
+                }
             }
         } else {
             alert("No puede añadir más de dos nodos hijos");
         }
 
-        diagram.commitTransaction("add child");
+        diagram.commitTransaction("add children");
     }
 
     // define una plantilla de nodo simple con un menú contextual
@@ -40,8 +42,8 @@ function init() {
             contextMenu:  // define un menú contextual para el nodo
               $("ContextMenu",
                 $("ContextMenuButton",
-                  $(go.TextBlock, "Add Child"),
-                  { click: addChildNode })
+                  $(go.TextBlock, "Add Children"),
+                  { click: addChildNodes })
               )
           }
         );
@@ -49,7 +51,7 @@ function init() {
     // define un modelo de árbol simple
     var model = $(go.TreeModel);
     model.nodeDataArray = [
-        { key: "1",              name: "Root" }
+        { key: "1", name: "Root" }
     ];
     myDiagram.model = model;
 }
