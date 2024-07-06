@@ -25,21 +25,6 @@ function init() {
         diagram.commitTransaction("add children");
     }
 
-    function changeName(e, obj) {
-        var node = obj.part.adornedPart;  // el nodo al que se le hace clic
-        var diagram = node.diagram;
-        diagram.startTransaction("change name");
- 
-        var newName = prompt("Nuevo nombre:");
-        if (newName) {
-            diagram.model.setDataProperty(node.data, "name", newName);
-        } else {
-            alert("No pusiste nada");
-        }
-
-        diagram.commitTransaction("change name");
-    }
-
     function showForm(e, obj) {
         currentNode = obj.part.adornedPart;  // el nodo al que se le hace clic
         document.getElementById('myOverlay').style.display = 'flex';
@@ -117,9 +102,6 @@ function init() {
                   $(go.TextBlock, "Add Children"),
                   { click: addChildNodes }),
                 $("ContextMenuButton",
-                  $(go.TextBlock, "Change name"),
-                  { click: changeName }),
-                $("ContextMenuButton",
                   $(go.TextBlock, "Formulario"),
                   { click: showForm })
               )
@@ -129,7 +111,7 @@ function init() {
     // define un modelo de árbol simple
     var model = $(go.TreeModel);
     model.nodeDataArray = [
-        { key: "1", name: "Root", description: "This is the root node" }
+        { key: "1", name: "A", description: "Proyecto integrador" }
     ];
     myDiagram.model = model;
 
