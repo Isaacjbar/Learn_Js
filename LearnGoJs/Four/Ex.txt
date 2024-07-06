@@ -3,3 +3,7 @@ dos nodos hijos, es decir impide que existan
 nodos sin hermanos pero sin pedir texto.
 
 Se añadió el metodo cambiar nombre.
+
+Se añadió el metodo Formulario.
+
+El fondo se difumina cuando se accede al formulario.
