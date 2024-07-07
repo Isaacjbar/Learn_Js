@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba de diagrama</title>
+  <link rel="stylesheet" href="diagramStyles.css">
+  <script src="https://unpkg.com/gojs@3.0.3/release/go.js"></script>
+</head>
+
+<body id="body">
+  <!-- Contenedor principal que envuelve todo lo relacionado al diagrama -->
+  <div id="allSampleContent" class="p-4 w-full h-full">
+    <!-- Este div agrupa los elementos según esta muestra de goJS -->
+    <div id="sample" style="width: 100%; height: 100%;">
+      <!-- myDiagramDiv es el contenedor principal donde se renderiza el diagrama GoJS. Contiene un <canvas> donde se dibuja el diagrama y un <div> adicional para manejar eventos y capas del diagrama. -->
+      <div id="myDiagramDiv" style="width: 100%; height: 100%;"></div>
+    </div>
+  </div> <!-- fin del contenedor principal -->
+  
+  <div id="globalCounter" class="counter">Total Nodes: 1</div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

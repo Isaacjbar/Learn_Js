@@ -1,0 +1,14 @@
+Explicación:
+Modelo de Datos:
+
+Cada nodo tiene ahora un contador (counter) que se inicializa en 0.
+Plantilla de Nodo:
+
+Se ha agregado lógica al evento doubleClick del nodo para verificar si el contador del nodo actual es menor que 2 antes de agregar un nuevo nodo. Esto asegura que solo los nodos cuyo contador sea menor que 2 puedan agregar más nodos.
+Función incrementCounter:
+
+Esta función actualiza el contador del nodo cuando se agrega un nuevo nodo. Si el contador alcanza o supera 2, se establece node.isTreeLeaf = true; para desactivar la capacidad de agregar más nodos a este nodo.
+Actualización del Contador Global:
+
+La función updateGlobalCounter actualiza el contador global de nodos en el HTML para reflejar el número total de nodos en el diagrama.
+Con estos cambios, cada nodo manejará su propio contador de forma independiente, y se asegurará de que solo los nodos con un contador menor que 2 puedan aceptar nuevos nodos.
